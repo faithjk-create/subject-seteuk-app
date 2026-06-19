@@ -58,7 +58,7 @@ if st.button("✨ 교과 세특 생성하기"):
         with st.spinner("선생님의 문체를 모방하여 명품 교과 세특을 작성 중입니다..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-1.5-pro-latest')
+                model = genai.GenerativeModel('gemini-pro')
                 
                 user_prompt = f"[Data Input]\n- 교과목명: {subject}\n- 희망 대학 유형: {uni_type}\n- 희망 학과: {major}\n- 학생의 평소 태도: {attitude}\n- 학생 활동 데이터: {activity_data}"
                 
